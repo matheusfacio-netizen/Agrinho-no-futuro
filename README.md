@@ -2,7 +2,7 @@
 
 ### O que é o site?
 
-O site "Inteligência Artificial no Campo" foi desenvolvido para apresentar de forma simples, educativa e interativa como tecnologias como drones, GPS e inteligência artificial estão transformando a agricultura. O projeto busca aproximar os visitantes da realidade do campo moderno, mostrando como a inovação contribui para uma produção mais eficiente e sustentável.
+O site: "https://ai-drones-gps-agri-e-09ls.bolt.host" "Inteligência Artificial no Campo" foi desenvolvido para apresentar de forma simples, educativa e interativa como tecnologias como drones, GPS e inteligência artificial estão transformando a agricultura. O projeto busca aproximar os visitantes da realidade do campo moderno, mostrando como a inovação contribui para uma produção mais eficiente e sustentável.
 
 ### Objetivos do Projeto
 
