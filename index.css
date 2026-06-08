@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-earth-900 bg-field-50 antialiased;
+  }
+}
+
+@layer components {
+  .game-area {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #87ceeb 0%, #87ceeb 55%, #4ade80 55%, #22c55e 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .food-item {
+    position: absolute;
+    transition: opacity 0.15s ease;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .food-item:hover {
+    transform: scale(1.15);
+  }
+
+  .drone {
+    position: absolute;
+    transition: left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 20;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+  }
+
+  .drone.propeller-spin svg .propeller {
+    animation: spin 0.15s linear infinite;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.3); }
+  }
+
+  @keyframes scorePopup {
+    0% { opacity: 1; transform: translateY(0) scale(1); }
+    100% { opacity: 0; transform: translateY(-40px) scale(1.5); }
+  }
+
+  .food-float {
+    animation: float 2s ease-in-out infinite;
+  }
+
+  .food-collected {
+    animation: fadeOut 0.3s ease forwards;
+  }
+
+  .score-popup {
+    position: absolute;
+    animation: scorePopup 0.7s ease forwards;
+    pointer-events: none;
+    z-index: 30;
+    font-weight: 700;
+    color: #facc15;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  }
+
+  .cloud {
+    position: absolute;
+    background: white;
+    border-radius: 9999px;
+    opacity: 0.8;
+    animation: cloudDrift linear infinite;
+  }
+
+  @keyframes cloudDrift {
+    from { transform: translateX(-200px); }
+    to { transform: translateX(calc(100vw + 200px)); }
+  }
+}
