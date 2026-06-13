@@ -18,4 +18,4 @@ O projeto inclui um jogo educativo chamado "Drone Coletor de Alimentos". Nele, o
 
 ### Utilização da Inteligência Artificial
 
-A inteligência artificial foi utilizada como ferramenta de apoio no desenvolvimento deste projeto, auxiliando na criação do código, na organização do site e na implementação das funcionalidades. Todo o conteúdo foi revisado e adaptado para atender aos objetivos do projeto, garantindo um resultado educativo, funcional e alinhado ao tema proposto.
+A inteligência artificial foi utilizada 98% como ferramenta de apoio no desenvolvimento deste projeto, auxiliando na criação do código, na organização do site e na implementação das funcionalidades. Todo o conteúdo foi revisado e adaptado para atender aos objetivos do projeto.
